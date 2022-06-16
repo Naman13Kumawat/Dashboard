@@ -9,13 +9,13 @@ export default function Navbar() {
       <h1 className="brand">LOGO</h1>
       <div className="search">
         <button className="search_btn">
-          <SearchIcon />
+          <SearchIcon className="icon"/>
         </button>
         <input type="text" placeholder="search for projects" />
       </div>
       <div className="profile">
         <span>
-          <img src="images/Ellipse 5.png" alt="profilePic" />
+          <img src="images/Ellipse.png" alt="profilePic" />
         </span>
         <span>
           <h2>Oliver Smith</h2>

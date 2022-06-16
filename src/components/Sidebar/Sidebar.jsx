@@ -1,89 +1,63 @@
-import "./Sidebar.scss"
+import "./Sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
-import StoreIcon from "@mui/icons-material/Store";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-import PollIcon from "@mui/icons-material/Poll";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
-import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import SendIcon from "@mui/icons-material/Send";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
+import CallIcon from "@mui/icons-material/Call";
+import ShowChartIcon from "@mui/icons-material/ShowChart";
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="center">
         <ul>
-          <p className="title">MAIN</p>
-          <li>
-            <DashboardIcon className="icon" />
+          <li className="active">
+            <div className="activeBar active"></div>
+            <DashboardIcon className="icon active" />
             <span>Dashboard</span>
           </li>
+          <li>
+            <div className="activeBar"></div>
+            <InsertDriveFileIcon className="icon" />
+            <span>Project</span>
+          </li>
+          <li>
+            <div className="activeBar"></div>
 
-          <p className="title">LISTS</p>
+            <CalendarMonthIcon className="icon" />
+            <span>Calendar</span>
+          </li>
+          <li>
+            <div className="activeBar"></div>
 
-          <li>
-            <PersonOutlineIcon className="icon" />
-            <span>Users</span>
+            <SendIcon className="icon" />
+            <span>Messages</span>
+            <div className="noti">5</div>
           </li>
           <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
-          </li>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Orders</span>
-          </li>
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
-          </li>
+            <div className="activeBar"></div>
 
-          <p className="title">USEFUL</p>
+            <NotificationsActiveIcon className="icon" />
+            <span>Notification</span>
+            <div className="noti">5</div>
+          </li>
+          <li>
+            <div className="activeBar"></div>
 
-          <li>
-            <PollIcon className="icon" />
-            <span>Stats</span>
-          </li>
-          <li>
-            <NotificationsNoneIcon className="icon" />
-            <span>Notifications</span>
-          </li>
-
-          <p className="title">SERVICE</p>
-
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
-          </li>
-          <li>
-            <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
-          </li>
-          <li>
-            <SettingsOutlinedIcon className="icon" />
-            <span>Settings</span>
+            <CallIcon className="icon" />
+            <span>Contacts</span>
           </li>
 
-          <p className="title">USER</p>
+          <p className="title">Promotions</p>
 
           <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
-          </li>
-          <li>
-            <LogoutOutlinedIcon className="icon" />
-            <span>Logout</span>
+            <div className="activeBar"></div>
+
+            <ShowChartIcon className="icon" />
+            <span>Promotions</span>
           </li>
         </ul>
-      </div>
-
-      <div className="bottom">
-        <div className="colorOptions"></div>
-        <div className="colorOptions"></div>
       </div>
     </div>
   );

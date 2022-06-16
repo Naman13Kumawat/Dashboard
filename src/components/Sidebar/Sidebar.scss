@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: white;
+    background: rgba(25, 59, 103, 0.02);
     border-right: 0.5px solid lightgray;
     flex: 1;
     min-height: 100vh;
@@ -24,16 +24,33 @@
 
     .center {
 
+
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
 
             .title {
-                margin: 0.5rem 0;
+                margin: 1.5rem 0;
                 font-size: 0.7rem;
                 font-weight: bold;
                 color: rgb(113, 113, 113);
+            }
+
+            .activeBar{
+                width: 5px;
+                position: absolute;
+                left: 0;
+                height: 2.5rem;
+                background-color: #14A9F9; 
+                display: none;
+                border-radius: 0 10px 10px 0;
+            }
+
+            
+
+            .activeBar.active{
+                display: block;
             }
 
             li {
@@ -43,14 +60,44 @@
                 display: flex;
                 gap: 0.5rem;
                 padding: 0.5rem;
+                margin: 0.5rem 0;
 
                 &:hover {
-                    background-color: rgba(51, 187, 218, 0.3);
+                    background-color: #14a9f959;
+                }
+
+                &:hover .activeBar{
+                    display: block;
+                }
+
+                span{
+                    font-size: 0.8rem;
                 }
 
                 .icon {
-                    color: rgba(51, 187, 218, 0.749);
+                    color: rgb(113, 113, 113);
                 }
+
+                .icon.active {
+                    color: #14A9F9;
+                }
+
+                .noti{
+                    width: 2rem;
+                    height: 1.5rem;
+                    border-radius: 5px;
+                    background-color:#14A9F9;
+                    color: white;
+                    margin-left: auto;
+                    font-size: 0.8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                }
+            }
+
+            .active{
+                color: #14A9F9;
             }
 
         }
