@@ -4,6 +4,8 @@ import HourglassTopIcon from "@mui/icons-material/HourglassTop";
 import TaskIcon from "@mui/icons-material/Task";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import EventIcon from "@mui/icons-material/Event";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 export default function Main() {
   return (
@@ -46,8 +48,21 @@ export default function Main() {
       {/* Current Section*/}
 
       <div>
-        <h1 className="title">Current Projects</h1>
-        <p className="desc">Projects that are currently in progress</p>
+        <div className="section_current">
+          <span>
+            <h1 className="title">Current Projects</h1>
+            <p className="desc">Projects that are currently in progress</p>
+          </span>
+          <span className="btn_box">
+            <button>
+              Filter
+              <FilterAltIcon />
+            </button>
+            <button>
+              <MoreVertIcon />
+            </button>
+          </span>
+        </div>
         <div className="current_card_container">
           <div className="card">
             <h1 className="card_title">Construction Project</h1>
