@@ -1,3 +1,126 @@
 .act_container{
     flex: 1;
+    border-left: 0.5px solid lightgray;
+    padding: 2rem;
+
+
+    span{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        align-items: center;
+    }
+
+    hr{
+        opacity: 0.3;
+    }
+
+    h1{
+        font-size: 1.1rem;
+        font-weight: 500;   
+    }
+
+    h2{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1rem 0;
+    }
+
+    h3{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    .links{
+        color: #028CD5;
+    }
+
+    .icon{
+        font-size: 1.2rem;
+    }
+
+    .img_box{
+        position: relative;
+        .img1{
+            position: relative;
+            left: 0rem;
+        }
+        .img2{
+            position: relative;
+            left: -1rem;
+        }
+        .img3{
+            position: relative;
+            left: -2rem;
+        }
+
+        .more{
+            position: relative;
+            left: -3rem;
+            width: 2.7rem;
+            height: 2.7rem;
+            border-radius: 50px;
+            color: rgba(28, 46, 69, 0.6);
+            font-size: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #EDEDED;
+        }
+    }
+
+    button{
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9px;
+        padding: 0.5rem 0.7rem;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 500;
+        border-radius: 4px;
+        background-color: #14A9F9;
+        color: #fff;
+    }
+    .recents{
+        position: relative;
+        .details{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: flex-start; 
+            margin: 0 1rem;
+            p{
+                font-size: 0.7rem;
+                font-weight: 500;
+            }
+
+            .date{
+                color: rgba(28, 46, 69, 0.6);
+            }
+        }
+
+        .message{
+            position: relative;
+        }
+        .circle{
+            height: 7px;
+            position: absolute;
+            top: 1rem;
+            left: -1rem;
+            width: 7px;
+            border-radius: 50%;
+            background-color: #14A9F9;
+        }
+
+        img{
+            width:3rem;
+        }
+    }
+
 }

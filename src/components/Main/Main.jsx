@@ -2,6 +2,8 @@ import "./Main.scss";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import HourglassTopIcon from "@mui/icons-material/HourglassTop";
 import TaskIcon from "@mui/icons-material/Task";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import EventIcon from "@mui/icons-material/Event";
 
 export default function Main() {
   return (
@@ -51,7 +53,9 @@ export default function Main() {
             <h1 className="card_title">Construction Project</h1>
             <p className="card_desc">Property name</p>
             <span>
+              <AttachMoneyIcon className="icon" />
               <h2>100 - 800</h2>
+              <EventIcon className="icon" />
               <h2>Deadline - 25 may</h2>
             </span>
             <span className="progess_bar"></span>
@@ -69,7 +73,9 @@ export default function Main() {
             <h1 className="card_title">Construction Project</h1>
             <p className="card_desc">Property name</p>
             <span>
+              <AttachMoneyIcon className="icon" />
               <h2>100 - 800</h2>
+              <EventIcon className="icon" />
               <h2>Deadline - 25 may</h2>
             </span>
             <span className="progess_bar"></span>
@@ -87,7 +93,9 @@ export default function Main() {
             <h1 className="card_title">Construction Project</h1>
             <p className="card_desc">Property name</p>
             <span>
+              <AttachMoneyIcon className="icon" />
               <h2>100 - 800</h2>
+              <EventIcon className="icon" />
               <h2>Deadline - 25 may</h2>
             </span>
             <span className="progess_bar"></span>
