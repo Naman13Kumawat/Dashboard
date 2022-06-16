@@ -1,0 +1,80 @@
+.sidebar {
+    background-color: white;
+    border-right: 0.5px solid lightgray;
+    flex: 1;
+    min-height: 100vh;
+    padding: 0 20px;
+
+    hr {
+        height: 0;
+        border: 0.5px solid lightgray;
+    }
+
+    .top {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            color: rgba(51, 187, 218, 0.749);
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    .center {
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .title {
+                margin: 0.5rem 0;
+                font-size: 0.7rem;
+                font-weight: bold;
+                color: rgb(113, 113, 113);
+            }
+
+            li {
+                align-items: center;
+                color:rgb(113, 113, 113);
+                cursor: pointer;
+                display: flex;
+                gap: 0.5rem;
+                padding: 0.5rem;
+
+                &:hover {
+                    background-color: rgba(51, 187, 218, 0.3);
+                }
+
+                .icon {
+                    color: rgba(51, 187, 218, 0.749);
+                }
+            }
+
+        }
+    }
+
+    .bottom {
+        display: flex;
+        gap: 1rem;
+        margin: 0.5rem;
+        width: fit-content;
+        .colorOptions {
+            cursor: pointer;
+            border: rebeccapurple 2px solid;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            
+            &:nth-child(1) {
+                background-color: rgb(23, 23, 23);
+            }
+
+            &:nth-child(2) {
+                background-color: whitesmoke;
+            }
+            }
+        }
+}

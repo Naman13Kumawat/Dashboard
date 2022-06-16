@@ -1,0 +1,49 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+
+    .brand{
+        font-size: 2rem;
+    }
+
+    .search{
+        display: flex;
+        background-color: #F6F6F6;
+        width: 40rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        
+        .search_btn{
+            background: none;
+            border: none;
+            margin: 0 1rem;
+        }
+    
+        input{
+            background: none;
+            border: none;
+           
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 10rem;
+        }
+
+        button{
+            background: none;
+            border: none;
+            margin: 0 1rem;
+        }
+    }
+
+}
